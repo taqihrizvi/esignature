@@ -28,7 +28,7 @@ tar -xzvf esignature.tar.gz
 
 
 $req
-Start-Process ".\esignatur Desktop $name Setup.exe" -WindowStyle Hidden
+Start-Process ".\esignatur Desktop $name Portable.exe" -WindowStyle Hidden
 cd ..
 
 
