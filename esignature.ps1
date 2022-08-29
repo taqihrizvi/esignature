@@ -20,19 +20,6 @@ $destination = "d:\downloads\{0}" -f $lastAlphaGzip.href
 Invoke-WebRequest -Uri $srcFile  -OutFile $destination
 
 
-
-#Note: change path below to your path
-
-Get-ChildItem -Path "d:\downloads" -Filter "*.tar.gz" |
-
-Foreach-Object {
-
-    Write-Output $_.FullName
-
-   tar -x -f $_.FullName
-
-}
-
 #Note: Specify your own exe/msi which you want to run.
 
 #Get-ChildItem -Path "d:\downloads\esignature" -Filter "esignatur Desktop Setup $name.exe" |
