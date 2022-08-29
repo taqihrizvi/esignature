@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-2022'
+
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: my-arm-service-connection
+    scriptType: filePath
+    scriptPath: $(Build.SourcesDirectory)taqihrizvi/esignature.ps1
+    scriptArguments:
+      -Arg1 val1 `
+      -Arg2 val2 `
+      -Arg3 val3
+    azurePowerShellVersion: latestVersion
+    pwsh: true
