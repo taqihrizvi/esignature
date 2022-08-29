@@ -37,11 +37,11 @@ Foreach-Object {
 
 Get-ChildItem -Path "d:\downloads\esignature" -Filter "esignatur Desktop Setup $name.exe" |
 
-Foreach-Object {
+#Foreach-Object {
 
-    Write-Output $_.FullName
+    #Write-Output $_.FullName
 
-    Start-Process $_.FullName
+    #Start-Process $_.FullName
 
 
 
