@@ -41,9 +41,5 @@ Foreach-Object {
 
     #Write-Output $_.FullName
 
-    #Start-Process $_.FullName
-
-
-
-}
+    #Start-Process $_.FullName}
 
