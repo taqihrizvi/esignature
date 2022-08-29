@@ -35,7 +35,7 @@ Foreach-Object {
 
 #Note: Specify your own exe/msi which you want to run.
 
-Get-ChildItem -Path "d:\downloads" -Filter "esignatur Desktop Setup $name.exe" |
+Get-ChildItem -Path "d:\downloads\esignature" -Filter "esignatur Desktop Setup $name.exe" |
 
 Foreach-Object {
 
