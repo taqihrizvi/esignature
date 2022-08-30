@@ -22,7 +22,7 @@ $name=$req -replace ".{7}$"# 7.1.0-alpha.616.tar.gz
 
 New-Item .\$name -ItemType Directory
 cd $name
-#Invoke-WebRequest $myDownloadUrl -OutFile esignature.tar.gz #C:\Users\{username}
+Invoke-WebRequest $myDownloadUrl -OutFile esignature.tar.gz #C:\Users\{username}
 tar -xzvf esignature.tar.gz
 
 
