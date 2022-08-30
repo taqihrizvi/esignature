@@ -22,11 +22,11 @@ Invoke-WebRequest -Uri $srcFile  -OutFile $destination
 
 #Note: Specify your own exe/msi which you want to run.
 
-#Get-ChildItem -Path "d:\downloads\esignature" -Filter "esignatur Desktop Setup $name.exe" |
+Get-ChildItem -Path "d:\downloads\esignature" -Filter "esignatur Desktop Setup $name.exe" |
 
-#Foreach-Object {
+Foreach-Object {
 
-    #Write-Output $_.FullName
+    Write-Output $_.FullName
 
-    #Start-Process $_.FullName}
+    Start-Process $_.FullName}
 
