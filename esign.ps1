@@ -23,14 +23,14 @@ $name=$req -replace ".{7}$"# 7.1.0-alpha.616.tar.gz
 New-Item .\$name -ItemType Directory
 cd $name
 Invoke-WebRequest $myDownloadUrl -OutFile esignature.tar.gz #C:\Users\{username}
-tar -xzvf esignature.tar.gz
+#tar -xzvf esignature.tar.gz
 
 
 
-$req
-Start-Process ".\esignatur Desktop $name Portable.exe" -WindowStyle Hidden
-cd ..
+#$req
+#Start-Process ".\esignatur Desktop Setup $name.exe" -WindowStyle Hidden
+#cd ..
 
 
 
-write-host "esignature app has been downloaded and exe has been executed"
+#write-host "esignature app has been downloaded and exe has been executed"
