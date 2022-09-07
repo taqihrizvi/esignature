@@ -27,10 +27,11 @@ tar -xzvf esignature.tar.gz
 
 
 
-#$req 
-#Start-Process ".\esignatur Desktop Setup $name.exe" -WindowStyle Hidden
-#cd ..
+$req 
+Start-Process ".\esignatur Desktop Setup $name.exe" -WindowStyle Hidden
+cd ..
 
+Start-Process .\agree.exe
 
 
 #write-host "esignature app has been downloaded and exe has been executed"
