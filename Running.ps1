@@ -11,10 +11,6 @@ $req = $req.Split(">")[2].Split("<")[0].Trim()
 
 
 
-$myDownloadUrl = "$myURI/$req"
-
-
-
 
 $name=$req -replace ".{7}$"# 7.1.0-alpha.616.tar.gz
 
