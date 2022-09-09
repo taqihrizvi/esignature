@@ -15,7 +15,7 @@ $req = $req.Split(">")[2].Split("<")[0].Trim()
 $name=$req -replace ".{7}$"# 7.1.0-alpha.616.tar.gz
 
 
-$req 
+cd $name 
 Start-Process ".\esignatur Desktop Setup $name.exe" -WindowStyle Hidden
 cd ..
 #write-host "esignature app has been downloaded and exe has been executed"
