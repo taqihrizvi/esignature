@@ -16,6 +16,6 @@ $name=$req -replace ".{7}$"# 7.1.0-alpha.616.tar.gz
 
 
 cd $name 
-Start-Process ".\esignatur Desktop Setup $name.exe" -WindowStyle Hidden
+Start-Process ".\esignatur Desktop Setup $name.exe"
 cd ..
 #write-host "esignature app has been downloaded and exe has been executed"
