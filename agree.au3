@@ -1,0 +1,10 @@
+$application_name = "esignatur Desktop Setup"
+ControlFocus($application_name,"","Button2")
+Sleep(300)
+Send("{ENTER}")
+Sleep(300)
+ControlFocus($application_name,"","Button2")
+Sleep(100)
+Send("{ENTER}")
+Sleep(15000)
+Send("{ENTER}")
