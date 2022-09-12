@@ -24,10 +24,3 @@ New-Item .\$name -ItemType Directory
 cd $name
 Invoke-WebRequest $myDownloadUrl -OutFile esignature.tar.gz #C:\Users\{username}
 tar -xvf esignature.tar.gz
-
-
-
-$req 
-Start-Process ".\esignatur Desktop Setup $name.exe" -WindowStyle Hidden
-cd ..
-#write-host "esignature app has been downloaded and exe has been executed"
