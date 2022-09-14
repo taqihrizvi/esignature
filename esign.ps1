@@ -1,3 +1,5 @@
+Remove-Item d:\agent\_work\1\s\* -Recurse -Force
+
 $myURI = "http://20.56.57.104:5080"
 
 
