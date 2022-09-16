@@ -7,8 +7,8 @@ trigger:
 - master
 
 pool: taqi
-steps:
-- task: PowerShell@2
-  inputs:
-    targetType: 'filePath'
-    filePath: "esign.ps1"
+stages:
+    stage:
+    - task: PowerShell@2
+      inputs:
+        filePath: 'esign.ps1'
